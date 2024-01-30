@@ -1,3 +1,5 @@
 {% extends 'diary/base.html' %} {% block content %}
 <h1>日記アプリです</h1>
-{% endblock %}
+{% for day in day_list %}
+<h2>{{day.title}}</h2>
+{% endfor %} {% endblock %}
