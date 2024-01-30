@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <title>{% block title %}{% endblock %}</title>
+    {% block extrajas %} {% endblock %}
   </head>
   <body>
-    {% block content %}{% endblock %}
+    {% block content %} {% endblock %} {% block extrajas %} {% endblock %}
   </body>
 </html>
