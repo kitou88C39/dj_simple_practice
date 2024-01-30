@@ -1,5 +1,7 @@
 from django.shortcuts import render
+from .forms import DayCreateForm
 
 def index(request):
     return render(request, "diary/day_list.html")
-# Create your views here.
+
+def add(request):
