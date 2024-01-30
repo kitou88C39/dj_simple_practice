@@ -16,6 +16,10 @@
     {% block extrajas %} {% endblock %}
   </head>
   <body>
+    <nav class="nav">
+      <a class="nav-link active" href="{% url 'diary:index'%}">一覧</a>
+      <a class="nav-link" href="{% url 'diary:add'%}">追加</a>
+    </nav>
     {% block content %} {% endblock %} {% block extrajas %} {% endblock %}
   </body>
 </html>
