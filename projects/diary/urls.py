@@ -6,5 +6,6 @@ app_name='diary'
 urlpatterns=[
         path('', views.index, name='index'),
         path('add/', views.index, name='add'),
-         path('update/<int:pk>', views.index, name='update'),
+        path('update/<int:pk>/', views.update, name='update'),
+        path('delete/<int:pk>/', views.delete, name='delete'),
 ]
